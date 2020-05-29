@@ -1,0 +1,363 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+.paragraphe {
+  margin: 25px 0px;
+  line-height: 35px;
+}
+
+.paragraphe.problematique {
+  font-size: 22px;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.paragraphe.image {
+  text-align: center;
+}
+.paragraphe.image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  background: #2f477a;
+  z-index: 10;
+}
+
+.navigation .title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.navigation .author {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.navigation .nav {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.navigation .nav .nav-toggle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.navigation .nav .nav-toggle:hover {
+  opacity: 0.7;
+}
+.navigation .nav .nav-toggle svg {
+  fill: #FFF;
+  width: 30px;
+  height: 30px;
+}
+
+.menu-toggle {
+  position: fixed;
+  width: 500px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  transition: 0.3s all ease;
+  background: #263962;
+  z-index: 15;
+  transform: translateX(100%);
+}
+.menu-toggle.toggled {
+  transform: translateX(0%);
+}
+
+.menu-toggle .head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.menu-toggle .head .untoggle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 50px;
+  transition: 0.3s all ease;
+}
+.menu-toggle .head .untoggle:hover {
+  opacity: 0.7;
+}
+.menu-toggle .head .untoggle svg {
+  fill: #FFF;
+  width: 30px;
+  height: 30px;
+}
+
+.menu-toggle .menu-content {
+  padding: 0px 20px;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+}
+
+.menu-toggle .menu-content .section {
+  margin-bottom: 20px;
+}
+
+.menu-toggle .menu-content .section-title a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.menu-toggle .menu-content .section-title,
+.menu-toggle .menu-content .section .sous-sections .sous-section {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-toggle .menu-content .section-title:after,
+.menu-toggle .menu-content .section .sous-sections .sous-section:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 1px;
+  background: #FFF;
+  transition: 0.3s all ease;
+}
+
+.menu-toggle .menu-content .section-title:hover:after,
+.menu-toggle .menu-content .section .sous-sections .sous-section:hover:after {
+  width: 100%;
+}
+
+.menu-toggle .menu-content .section .sous-sections {
+  padding: 15px;
+}
+
+.menu-toggle .menu-content .section .sous-sections .sous-section {
+  margin-bottom: 10px;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 600px;
+  background-position: center!important;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  flex-direction: column;
+  position: relative;
+}
+
+.header .bg {
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header .title {
+  z-index: 5;
+  font-size: 46px;
+  font-weight: 300;
+  text-align: center;
+  width: 75%;
+  margin: 0px auto;
+}
+
+.header .subtitle {
+  z-index: 5;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  width: 75%;
+  margin: 25px auto 0px auto;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 300;
+  background: #fefefe;
+  padding: 50px;
+  text-align: justify;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  background-position: center!important;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide .bg {
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .title {
+  font-size: 36px;
+  margin: 50px;
+  text-align: center;
+  color: #FFF!important;
+  font-weight: 300;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+}
+.swiper-slide .title:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0%;
+  height: 1px;
+  background: #FFF;
+  transition: 0.3s all ease;
+}
+.swiper-slide .title:hover:after {
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFF!important;
+}
+
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.partie-title {
+  background: #3b5998;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.content .sous-partie {
+  font-size: 20px;
+  font-weight: 300;
+  background: #fefefe;
+  padding: 50px;
+  text-align: justify;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content .sous-partie .sous-partie-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+.content .sous-partie .sous-partie-title:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+
+.content-sources {
+  font-size: 20px;
+  font-weight: 300;
+  background: #fefefe;
+  padding: 50px;
+  text-align: justify;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content-sources .partie-sources {
+  margin-bottom: 50px;
+}
+
+.content-sources .partie-sources .source-partie-title {
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.content-sources .partie-sources .sous-partie {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.content-sources .partie-sources .sous-partie .sous-parties-liste {
+  padding-left: 20px;
+}
+
+.content-sources .partie-sources .sous-partie .sous-parties-liste a {
+  color: #000;
+}
+
+
+
+.content-synthese {
+  font-size: 20px;
+  font-weight: 300;
+  background: #fefefe;
+  padding: 50px;
+  text-align: justify;
+  max-width: 1000px;
+  margin: auto;
+}
